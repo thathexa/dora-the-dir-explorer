@@ -1,0 +1,101 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: #444;
+  background: #f8f8f8;
+}
+
+h1 {
+  position: relative;
+  margin: 0;
+  padding: 2rem 5%;
+  font-size: 2rem;
+  overflow: hidden;
+  background: #304891;
+  color: #f8f8f8;
+  font-weight: normal;
+}
+
+table {
+  width: 90%;
+  margin-left: 5%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table tr:first-child th {
+  padding: 1.5rem 1rem;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  color: #666;
+}
+
+table tr:first-child th:nth-of-type(3), table tr:first-child th:nth-of-type(4) {
+  text-align: right;
+}
+
+table tr:first-child th a {
+  text-decoration: none;
+  color: inherit;
+}
+
+table tr:first-child th a:hover {
+  color: #888;
+}
+
+table tr:first-child th a:after {
+  content: '\00a0\00a0\21c5';
+}
+
+table tr td {
+  position: relative; /* Needed for preview tooltip positioning */
+  padding: 1rem;
+}
+
+table tr td:first-of-type {
+  text-align: right;
+}
+
+table tr td a {
+  color: #547fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+table tr td a:hover {
+  text-decoration: underline;
+}
+
+.search-bar {
+  margin: 0 5%;
+  margin-top: 4rem;
+  padding: 0 1.5rem;
+  width: 20%;
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 1.25rem;
+  border: 2px solid #ccc;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.preview-entry:hover {
+  background-color: #eee;
+}
+
+.preview-tooltip {
+  position: absolute;
+  display: block;
+  top: -100px;
+  left: 100%;
+  width: 350px;
+  height: 500px;
+  background: white;
+  border: 2px solid #444;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px 3px rgba(0, 0, 0, .4);
+  z-index: 1;
+  transition: opacity .1s ease-in-out;
+}
